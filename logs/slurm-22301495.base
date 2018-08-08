@@ -1,0 +1,13 @@
+[main] INFO CoreNLP - --- StanfordCoreNLPServer#main() called ---
+[main] INFO CoreNLP - setting default constituency parser
+[main] INFO CoreNLP - warning: cannot find edu/stanford/nlp/models/srparser/englishSR.ser.gz
+[main] INFO CoreNLP - using: edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz instead
+[main] INFO CoreNLP - to use shift reduce parser download English models jar from:
+[main] INFO CoreNLP - http://stanfordnlp.github.io/CoreNLP/download.html
+[main] INFO CoreNLP -     Threads: 32
+[main] INFO CoreNLP - Starting server...
+[main] INFO CoreNLP - StanfordCoreNLPServer listening at /0.0.0.0:9000
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 5165.40it/s]
+[?1034h>>> 
+kill 12090: No such process
+[Thread-0] INFO CoreNLP - CoreNLP Server is shutting down.

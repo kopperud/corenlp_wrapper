@@ -58,13 +58,5 @@ def annotate(filepath, ner_path, text, nlp, verbose = False):
         raise ValueError(x)
             
     d = [x]
-        
-    writepath = filepath.replace("content", "output").replace(".pdf", "").replace(".txt", "") + ".json"
 
-    os.makedirs(os.path.dirname(writepath), exist_ok = True)
-    with open(writepath, "w") as f:
-        if verbose:
-            print("Writing", writepath)
-        f.write(json.dumps(d))
-        f.close()
-
+    return(d)        
