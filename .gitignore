@@ -4,3 +4,4 @@ output2
 content
 regexner_rules.txt
 logs
+*.swp
