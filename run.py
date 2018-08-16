@@ -35,19 +35,12 @@ is_english = defaultdict(lambda: False, is_english0)
 
 
         
-<<<<<<< HEAD:run2.py
+
 for path in tqdm(txt_paths[2852+1085:]):
     if ntpath.basename(path).replace(".txt", "") not in existing and is_eng(path):       
-=======
-for path in tqdm(txt_paths):
-#    if ntpath.basename(path).replace(".txt", "") not in existing and is_eng(path):       
-    if ntpath.basename(path).replace(".txt", "") not in existing and is_english[path.split("/")[1]]:       
->>>>>>> bdfa52e14bac75e7054fca3a701392d5c61b59a5:run.py
         with open(path, "r") as f:
             txt = f.read()
         d = annotate(path, ner_path, txt, nlp)
-
-#        print(d)
 
         writepath = path.replace("content", "output").replace(".pdf", "").replace(".txt", "") + ".json"
 
