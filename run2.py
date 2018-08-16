@@ -38,7 +38,7 @@ existing = [ntpath.basename(x).replace(".json","") for x in glob.glob("output/**
 
 
         
-for path in tqdm(txt_paths):
+for path in tqdm(txt_paths[2852+1085:]):
     if ntpath.basename(path).replace(".txt", "") not in existing and is_eng(path):       
         with open(path, "r") as f:
             txt = f.read()

@@ -1,0 +1,12 @@
+annotators = tokenize, ssplit, pos, lemma, regexner, ner, depparse
+#annotators = tokenize, ssplit
+pipelineLanguage = en
+outputExtension = .json
+outputFormat = json
+fileList = filelist.txt
+timeout = 540000
+threads = 16
+outputDirectory = output2
+regexner.backgroundSymbol = ORGANIZATION,PERSON,LOCATION,MISC,O
+#ner.model = /uio/kant/nhm-sfs-u2/bjorntko/natural_language_processing/edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz
+options = "splitHyphenated=true"
